@@ -7,6 +7,10 @@ const answerBody = document.querySelector("#answer-body");
 const clearButton = document.querySelector("#clear-button");
 const copyButton = document.querySelector("#copy-button");
 const toast = document.querySelector("#toast");
+const modeSelect = document.querySelector('#research-mode');
+const conversation = document.querySelector('#conversation');
+const resetChat = document.querySelector('#reset-chat');
+let history = [];
 let lastAnswer = "";
 let toastTimer;
 
@@ -62,13 +66,16 @@ async function askQuestion(question) {
     const response = await fetch("/api/ask", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({question: trimmed})
+      body: JSON.stringify({question: trimmed, mode: modeSelect.value})
     });
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "Não foi possível pesquisar agora.");
     answerTitle.textContent = data.topic || "Sua resposta";
     renderAnswer(data.answer || "Não encontrei uma resposta.", data.sources || []);
     answerSection.hidden = false;
+    history.push({question: trimmed, answer: data.answer || '', engine: data.engine || '', sources: data.sources || []});
+    if (history.length > 20) history.shift();
+    renderHistory();
     answerSection.scrollIntoView({behavior: "smooth", block: "start"});
   } catch (error) {
     showToast(error.message || "Falha de conexão. Tente novamente.");
@@ -87,8 +94,51 @@ document.querySelectorAll("[data-question]").forEach((button) => {
   button.addEventListener("click", () => askQuestion(button.dataset.question));
 });
 
+function renderHistory() {
+  conversation.replaceChildren();
+  history.forEach((item) => {
+    const article = document.createElement('article');
+    article.className = 'chat-entry';
+    const q = document.createElement('div');
+    q.className = 'chat-question';
+    q.textContent = 'Pergunta: ' + item.question;
+    const a = document.createElement('div');
+    a.className = 'chat-response';
+    a.textContent = item.answer;
+    const meta = document.createElement('div');
+    meta.className = 'chat-meta';
+    meta.textContent = 'Fonte: ' + item.engine;
+    article.append(q, a, meta);
+    if (item.sources.length) {
+      const links = document.createElement('div');
+      links.className = 'chat-sources';
+      item.sources.forEach((source) => {
+        if (!source.url || !source.url.startsWith('https://pt.wikipedia.org/wiki/')) return;
+        const link = document.createElement('a');
+        link.href = source.url;
+        link.textContent = source.title;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        links.appendChild(link);
+      });
+      article.appendChild(links);
+    }
+    conversation.appendChild(article);
+  });
+}
+
+resetChat.addEventListener('click', async () => {
+  history = [];
+  renderHistory();
+  try { await fetch('/api/reset', {method: 'POST'}); } catch (_) {}
+  answerSection.hidden = true;
+  answerBody.replaceChildren();
+  input.value = '';
+  input.focus();
+  showToast('Conversa limpa.');
+});
+
 clearButton.addEventListener("click", async () => {
-  try { await fetch("/api/reset", {method: "POST"}); } catch (_) {}
   answerSection.hidden = true;
   answerBody.replaceChildren();
   input.value = "";
