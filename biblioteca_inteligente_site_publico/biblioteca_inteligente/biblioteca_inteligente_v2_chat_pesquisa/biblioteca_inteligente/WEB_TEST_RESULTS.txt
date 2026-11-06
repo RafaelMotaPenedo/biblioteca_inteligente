@@ -1,0 +1,3 @@
+PASS: app.py compila
+PASS: knowledge.json válido (9 registros)
+AVISO: Flask não está instalado neste ambiente; as dependências estão listadas em requirements.txt

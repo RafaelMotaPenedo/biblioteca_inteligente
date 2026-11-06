@@ -1,0 +1,396 @@
+{
+  "book": "O Menino do Pijama Listrado",
+  "author": "John Boyne",
+  "version_scope": {
+    "primary": "romance",
+    "note": "Esta base contém resumos e interpretações de estudo, não trechos literais do livro. Detalhes exclusivos do filme devem ser identificados separadamente."
+  },
+  "entries": [
+    {
+      "id": "bruno",
+      "type": "character",
+      "name": "Bruno",
+      "topic": "Bruno",
+      "characteristics": [
+        "curioso",
+        "aventureiro",
+        "questionador",
+        "ingênuo",
+        "solitário",
+        "capaz de empatia"
+      ],
+      "behavior": "Bruno é um menino alemão de nove anos. Sente falta de Berlim, explora os arredores da nova casa e faz perguntas sobre o lugar onde vive. Sua visão infantil limita sua compreensão do nazismo e do campo de concentração.",
+      "relationships": {
+        "Shmuel": "Constrói uma amizade baseada em conversas, companhia e lealdade, embora não compreenda completamente a realidade vivida pelo amigo.",
+        "Pai": "Respeita a autoridade do pai, mas não entende plenamente seu trabalho nem as consequências dele.",
+        "Gretel": "Tem uma relação de rivalidade entre irmãos, com discussões e provocações.",
+        "Maria": "Convive com Maria, empregada da família, e começa a perceber que os adultos têm experiências e sentimentos próprios.",
+        "Pavel": "Pavel cuida de Bruno quando ele se machuca, ajudando a revelar a humanidade de alguém tratado como prisioneiro."
+      },
+      "conflicts": [
+        "solidão após a mudança",
+        "conflito com as regras e decisões do pai",
+        "compreensão limitada do campo",
+        "remorso depois de negar conhecer Shmuel"
+      ],
+      "development": {
+        "beginning": "Sente falta de Berlim e concentra-se nas próprias perdas.",
+        "middle": "Explora o ambiente e fortalece a amizade com Shmuel.",
+        "end": "Decide ajudar Shmuel a procurar o pai desaparecido e morre com ele no desfecho."
+      },
+      "text": "Bruno é o protagonista, um menino alemão de nove anos. É curioso, aventureiro e questionador, mas não compreende plenamente o nazismo nem a realidade do campo. A amizade com Shmuel amplia sua empatia e lealdade. No final, entra no campo para ajudar o amigo a procurar o pai desaparecido e morre com ele.",
+      "keywords": [
+        "bruno",
+        "protagonista",
+        "curioso",
+        "ingenuo",
+        "empatia",
+        "lealdade",
+        "gretel",
+        "maria",
+        "pavel",
+        "pai",
+        "mudanca",
+        "final",
+        "morte"
+      ],
+      "source": "Resumo e análise de estudo; conferir detalhes na edição utilizada."
+    },
+    {
+      "id": "pai",
+      "type": "character",
+      "name": "Pai de Bruno",
+      "topic": "Pai de Bruno",
+      "characteristics": [
+        "autoritário",
+        "rígido",
+        "disciplinado",
+        "orgulhoso do cargo",
+        "dedicado à carreira militar"
+      ],
+      "behavior": "É um oficial nazista de alto escalão responsável pelo campo. Exige obediência dos filhos e não explica a Bruno a realidade do campo. Sua posição no regime o torna responsável por participar de um sistema de perseguição e violência.",
+      "relationships": {
+        "Bruno": "Demonstra autoridade paterna, mas entra em conflito com a curiosidade do filho e não o ajuda a compreender a realidade do campo.",
+        "Gretel": "Mantém uma relação familiar marcada pela autoridade.",
+        "Esposa": "A relação sofre tensões quando ela passa a questionar o trabalho do marido e a vida perto do campo.",
+        "Prisioneiros": "Sua função está ligada ao sistema desumano que aprisiona e persegue pessoas."
+      },
+      "conflicts": [
+        "tensão entre carreira e vida familiar",
+        "questionamentos da esposa",
+        "curiosidade de Bruno",
+        "consequências do desaparecimento do filho"
+      ],
+      "development": {
+        "beginning": "Confiante e orgulhoso de sua posição.",
+        "middle": "Enfrenta tensões familiares relacionadas ao campo e ao trabalho.",
+        "end": "Fica desesperado após o desaparecimento de Bruno; a tragédia evidencia as consequências de suas escolhas."
+      },
+      "text": "O pai de Bruno é um oficial nazista de alto escalão, autoritário, disciplinado e orgulhoso de sua posição. Exige obediência dos filhos e evita explicar a Bruno a realidade do campo. Seu trabalho e suas decisões contribuem para a perseguição e o sofrimento dos prisioneiros. O desaparecimento de Bruno o deixa desesperado. Nas anotações sobre o filme, ele é chamado Ralf; no romance, é conhecido principalmente como Pai.",
+      "keywords": [
+        "pai",
+        "pai de bruno",
+        "ralf",
+        "oficial",
+        "comandante",
+        "nazista",
+        "autoridade",
+        "esposa",
+        "gretel",
+        "prisioneiros",
+        "desaparecimento",
+        "culpa"
+      ],
+      "source": "Análise de estudo. Distinção romance/filme: o nome Ralf é associado à adaptação cinematográfica."
+    },
+    {
+      "id": "kotler",
+      "type": "character",
+      "name": "Tenente Kurt Kotler",
+      "topic": "Tenente Kurt Kotler",
+      "characteristics": [
+        "autoritário",
+        "arrogante",
+        "cruel",
+        "agressivo",
+        "preconceituoso",
+        "preocupado com a aparência"
+      ],
+      "behavior": "Kotler usa sua posição militar para intimidar e maltratar pessoas. Sua violência e seu preconceito aparecem especialmente na maneira como trata Pavel e Shmuel.",
+      "relationships": {
+        "Shmuel": "Agride Shmuel depois de acusá-lo de comer comida destinada aos soldados.",
+        "Pavel": "Trata Pavel com desprezo e violência.",
+        "Pai de Bruno": "Procura apresentar-se como um soldado exemplar diante do superior."
+      },
+      "conflicts": [
+        "abuso de poder",
+        "violência contra prisioneiros",
+        "preconceito e obediência ao regime"
+      ],
+      "development": {
+        "beginning": "Apresenta-se como jovem oficial bem-arrumado e confiante.",
+        "middle": "Sua crueldade fica evidente no tratamento dado a Pavel e Shmuel.",
+        "end": "Sua presença reforça a atmosfera de intimidação e violência do regime."
+      },
+      "text": "O tenente Kurt Kotler é um jovem oficial nazista autoritário, arrogante e cruel. É descrito como bem-arrumado e preocupado com a aparência. Usa sua posição para intimidar e maltratar pessoas, especialmente Pavel e Shmuel. Sua violência evidencia a desumanização e o abuso de poder.",
+      "keywords": [
+        "kotler",
+        "kurt kotler",
+        "tenente",
+        "oficial",
+        "violência",
+        "crueldade",
+        "arrogância",
+        "preconceito",
+        "pavel",
+        "shmuel",
+        "soldado",
+        "agressão"
+      ],
+      "source": "Análise de estudo; conferir descrições físicas na edição utilizada."
+    },
+    {
+      "id": "shmuel",
+      "type": "character",
+      "name": "Shmuel",
+      "topic": "Shmuel",
+      "characteristics": [
+        "sensível",
+        "tímido",
+        "educado",
+        "triste",
+        "cauteloso",
+        "desejoso de amizade"
+      ],
+      "behavior": "Shmuel é um menino judeu de nove anos preso no campo de concentração. Vive com fome, medo e separação familiar. Apesar do sofrimento, valoriza a amizade com Bruno.",
+      "relationships": {
+        "Bruno": "Desenvolve uma amizade sincera com Bruno, embora os meninos vivam realidades muito diferentes.",
+        "Kotler": "Sofre violência de Kotler, incluindo uma agressão após uma acusação relacionada à comida.",
+        "Família": "Foi separado de familiares durante a perseguição nazista; seu pai desaparece antes do desfecho."
+      },
+      "conflicts": [
+        "fome e condições desumanas",
+        "separação da família",
+        "perseguição antissemita",
+        "violência dos soldados"
+      ],
+      "development": {
+        "beginning": "Já vive preso no campo e sofre com medo, fome e separação.",
+        "middle": "A amizade com Bruno oferece momentos de companhia e conforto.",
+        "end": "Pede ajuda a Bruno para procurar seu pai; os dois meninos morrem no desfecho."
+      },
+      "text": "Shmuel é um menino judeu de nove anos que vive preso no campo de concentração. É sensível, tímido e triste devido à fome, ao medo e à separação da família. Sua amizade com Bruno representa companhia em meio ao sofrimento. Após o desaparecimento de seu pai, pede ajuda a Bruno para procurá-lo. Os dois meninos morrem no final.",
+      "keywords": [
+        "shmuel",
+        "menino judeu",
+        "amizade",
+        "bruno",
+        "família",
+        "fome",
+        "medo",
+        "campo",
+        "prisioneiro",
+        "kotler",
+        "pai desaparecido",
+        "morte",
+        "perseguição"
+      ],
+      "source": "Resumo e análise de estudo."
+    },
+    {
+      "id": "mae",
+      "type": "character",
+      "name": "Mãe de Bruno",
+      "topic": "Mãe de Bruno",
+      "characteristics": [
+        "protetora",
+        "cuidadosa",
+        "preocupada",
+        "dividida entre a família e o marido"
+      ],
+      "behavior": "Procura proteger Bruno e Gretel e preservar uma vida familiar normal. Demonstra desconforto com a mudança e com a proximidade do campo. Aos poucos, questiona o trabalho do marido e as consequências de viver naquele lugar.",
+      "relationships": {
+        "Bruno": "É cuidadosa e tenta protegê-lo dos problemas dos adultos.",
+        "Gretel": "Demonstra preocupação com a filha, assim como com Bruno.",
+        "Pai de Bruno": "A relação inicialmente respeitosa fica tensa à medida que ela questiona o trabalho do marido.",
+        "Maria": "Mantém uma relação de empregadora e empregada, marcada por diferenças de posição social."
+      },
+      "conflicts": [
+        "desconforto com a mudança",
+        "questionamentos sobre o trabalho do marido",
+        "proteção dos filhos",
+        "tensões conjugais"
+      ],
+      "development": {
+        "beginning": "Tenta manter a rotina familiar e proteger os filhos.",
+        "middle": "Demonstra crescente desconforto com o local e o trabalho do marido.",
+        "end": "É profundamente afetada pelo desaparecimento de Bruno e pela tragédia familiar."
+      },
+      "text": "A mãe de Bruno é protetora e cuidadosa com Bruno e Gretel. Procura preservar a vida familiar, mas sente desconforto com a mudança e com a proximidade do campo. A relação com o marido fica tensa quando ela passa a questionar seu trabalho. O desaparecimento de Bruno abala profundamente a família.",
+      "keywords": [
+        "mãe",
+        "mae de bruno",
+        "esposa",
+        "proteção",
+        "bruno",
+        "gretel",
+        "pai",
+        "maria",
+        "família",
+        "casamento",
+        "conflito",
+        "desaparecimento"
+      ],
+      "source": "Anotações de estudo; verificar detalhes específicos na edição do romance."
+    },
+    {
+      "id": "gretel",
+      "type": "character",
+      "name": "Gretel",
+      "topic": "Gretel",
+      "characteristics": [
+        "mais velha que Bruno",
+        "influenciada pelos adultos",
+        "interessada no mundo dos adultos"
+      ],
+      "behavior": "Gretel é a irmã mais velha de Bruno. A mudança e o ambiente em que vive influenciam sua visão de mundo. Sua relação com Bruno inclui discussões e rivalidade entre irmãos.",
+      "relationships": {
+        "Bruno": "Tem uma relação de rivalidade e provocações, típica de irmãos, embora compartilhem a experiência da mudança.",
+        "Pai": "Relaciona-se com o pai dentro da estrutura de autoridade familiar.",
+        "Mãe": "Recebe cuidado e orientação da mãe."
+      },
+      "conflicts": [
+        "rivalidade com Bruno",
+        "adaptação à nova casa",
+        "influência da ideologia nazista no ambiente familiar"
+      ],
+      "development": {
+        "beginning": "Também precisa adaptar-se à mudança da família.",
+        "middle": "Demonstra crescente interesse pelas ideias e pela visão de mundo dos adultos.",
+        "end": "Permanece parte da família afetada pela tragédia de Bruno."
+      },
+      "text": "Gretel é a irmã mais velha de Bruno. A relação entre os dois inclui discussões e rivalidade. Ao longo da história, Gretel passa a se interessar mais pelo mundo dos adultos e é influenciada pelo ambiente ideológico em que vive.",
+      "keywords": [
+        "gretel",
+        "irmã",
+        "irmã de bruno",
+        "bruno",
+        "família",
+        "rivalidade",
+        "pai",
+        "mãe",
+        "mudança"
+      ],
+      "source": "Resumo e análise de estudo."
+    },
+    {
+      "id": "pavel",
+      "type": "character",
+      "name": "Pavel",
+      "topic": "Pavel",
+      "characteristics": [
+        "prisioneiro judeu",
+        "trabalha na casa",
+        "cuidadoso",
+        "vítima de violência"
+      ],
+      "behavior": "Pavel é um prisioneiro que trabalha na casa da família. Ele cuida de Bruno quando o menino se machuca, revelando sua humanidade apesar do tratamento desumano que recebe.",
+      "relationships": {
+        "Bruno": "Cuida de Bruno depois de um acidente doméstico.",
+        "Kotler": "É tratado com desprezo e violência por Kotler.",
+        "Família de Bruno": "Trabalha na casa, mas sua condição de prisioneiro evidencia a desigualdade e a violência do sistema."
+      },
+      "conflicts": [
+        "aprisionamento",
+        "trabalho forçado",
+        "violência e desumanização"
+      ],
+      "development": {
+        "beginning": "É apresentado como prisioneiro que trabalha na casa.",
+        "middle": "Cuida de Bruno e demonstra conhecimento médico, apesar das condições impostas.",
+        "end": "Sua experiência evidencia a crueldade do sistema de perseguição."
+      },
+      "text": "Pavel é um prisioneiro judeu que trabalha na casa da família de Bruno. Ele cuida de Bruno depois que o menino se machuca. Apesar da bondade demonstrada, é vítima de desprezo e violência por parte de Kotler. Sua presença evidencia a desumanização dos prisioneiros.",
+      "keywords": [
+        "pavel",
+        "prisioneiro",
+        "médico",
+        "bruno",
+        "kotler",
+        "violência",
+        "casa",
+        "trabalho",
+        "empregado"
+      ],
+      "source": "Resumo e análise de estudo."
+    },
+    {
+      "id": "final",
+      "type": "topic",
+      "name": "Final da história",
+      "topic": "Final da história",
+      "characteristics": [],
+      "behavior": "No desfecho, Bruno entra no campo para ajudar Shmuel a procurar o pai desaparecido.",
+      "relationships": {
+        "Bruno e Shmuel": "A decisão de Bruno expressa lealdade e amizade, mas os dois são vítimas da violência do campo."
+      },
+      "conflicts": [
+        "perigo que Bruno não compreende plenamente",
+        "perseguição e assassinato de pessoas no Holocausto"
+      ],
+      "development": {
+        "end": "Bruno e Shmuel são levados para uma câmara de gás e morrem. A família de Bruno fica devastada pelo desaparecimento do menino."
+      },
+      "text": "No final da história, Bruno entra no campo para ajudar Shmuel a procurar seu pai desaparecido. Os dois são levados para uma câmara de gás e morrem. O desfecho evidencia a tragédia do Holocausto e as consequências da desumanização promovida pelo nazismo.",
+      "keywords": [
+        "final",
+        "fim",
+        "morte",
+        "morre",
+        "bruno",
+        "shmuel",
+        "câmara de gás",
+        "pai desaparecido",
+        "holocausto",
+        "tragédia",
+        "spoiler"
+      ],
+      "source": "Resumo do desfecho da obra."
+    },
+    {
+      "id": "temas",
+      "type": "topic",
+      "name": "Temas e mensagem da obra",
+      "topic": "Temas e mensagem da obra",
+      "characteristics": [],
+      "behavior": "A obra aborda amizade, inocência infantil, preconceito, obediência, autoridade, desumanização e Holocausto.",
+      "relationships": {
+        "Bruno e Shmuel": "A amizade contrasta com as divisões impostas pelo regime nazista."
+      },
+      "conflicts": [
+        "empatia versus preconceito",
+        "inocência versus violência histórica",
+        "obediência versus responsabilidade moral"
+      ],
+      "development": {
+        "end": "A tragédia final evidencia os efeitos da perseguição e da desumanização."
+      },
+      "text": "A obra aborda amizade, inocência infantil, preconceito, obediência, autoridade, desumanização e Holocausto. A perspectiva limitada de Bruno cria ironia dramática, pois o leitor percebe parte da gravidade dos acontecimentos antes do protagonista. É uma obra de ficção, não um relato documental da vida em Auschwitz.",
+      "keywords": [
+        "temas",
+        "mensagem",
+        "significado",
+        "amizade",
+        "inocência",
+        "preconceito",
+        "obediência",
+        "autoridade",
+        "empatia",
+        "desumanização",
+        "holocausto",
+        "ironia dramática"
+      ],
+      "source": "Análise temática de estudo."
+    }
+  ]
+}
