@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#142d2a">
+  <meta name="description" content="Explore personagens, relações e acontecimentos de O Menino do Pijama Listrado com a Biblioteca Inteligente.">
+  <title>Biblioteca Inteligente</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23142d2a'/%3E%3Cpath d='M18 25 Q35 18 49 30 V76 Q34 64 18 70Z M82 25 Q65 18 51 30 V76 Q66 64 82 70Z' fill='%23f3dfb5' stroke='%23d0a96b' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Biblioteca Inteligente, início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M5 11.5C12 8 19 9 23 14V39C18 34 11 33 5 36V11.5Z" fill="currentColor" opacity=".92"/><path d="M43 11.5C36 8 29 9 25 14V39C30 34 37 33 43 36V11.5Z" fill="currentColor" opacity=".62"/><path d="M24 14V40" stroke="#142d2a" stroke-width="2"/></svg>
+        </span>
+        <span class="brand-copy"><strong>Biblioteca</strong><span>INTELIGENTE</span></span>
+      </a>
+      <span class="edition-pill"><span class="status-dot"></span> Edição literária</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> LEITURA • CONTEXTO • DESCOBERTA</p>
+          <h1 id="hero-title">Uma história.<br><em>Muitas perguntas.</em></h1>
+          <p class="hero-description">Explore personagens, relações e conflitos de <i>O Menino do Pijama Listrado</i> com uma biblioteca feita para investigar além da superfície.</p>
+          <div class="hero-note"><span class="sparkle">✳</span><span>Comece com uma pergunta. Siga a curiosidade.</span></div>
+        </div>
+        <div class="book-art" aria-label="Ilustração decorativa de um livro aberto">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="book-shadow"></div>
+          <div class="open-book">
+            <div class="book-page left-page"><span class="page-rule"></span><span class="page-rule short"></span><span class="page-rule"></span><span class="page-rule medium"></span><span class="page-rule short"></span></div>
+            <div class="book-page right-page"><span class="chapter-mark">CAPÍTULO</span><span class="page-rule"></span><span class="page-rule medium"></span><span class="page-rule"></span><span class="page-rule short"></span></div>
+            <div class="book-spine"></div>
+          </div>
+          <span class="art-star star-a">✳</span><span class="art-star star-b">✦</span><span class="art-star star-c">·</span>
+          <span class="art-label">LEIA. QUESTIONE. COMPREENDA.</span>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Pesquisar no livro">
+        <div class="workspace-heading">
+          <div><p class="section-kicker">SEU ESPAÇO DE INVESTIGAÇÃO</p><h2>O que você quer descobrir?</h2></div>
+          <span class="privacy-note"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 9V6a5 5 0 0 1 10 0v3M4 9h12v8H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg> Sem cadastro</span>
+        </div>
+        <form id="question-form" class="search-box">
+          <span class="search-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <input id="question-input" name="question" type="text" maxlength="500" autocomplete="off" placeholder="Ex.: Como a amizade entre Bruno e Shmuel muda?" aria-label="Digite sua pergunta" required>
+          <button id="ask-button" type="submit"><span>Investigar</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </form>
+        <div class="suggestions">
+          <span class="suggestion-label">IDEIAS PARA COMEÇAR</span>
+          <div class="chips">
+            <button class="chip" data-question="Como é a personalidade de Bruno?">Personalidade de Bruno <span>↗</span></button>
+            <button class="chip" data-question="Como é a amizade entre Bruno e Shmuel?">Bruno e Shmuel <span>↗</span></button>
+            <button class="chip" data-question="Quais são os conflitos do pai de Bruno?">Conflitos familiares <span>↗</span></button>
+            <button class="chip" data-question="Quais são os principais temas do livro?">Temas do livro <span>↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="answer-section" class="answer-section" aria-live="polite" hidden>
+        <div class="answer-topline"><span class="answer-icon">✳</span><div><p class="section-kicker">RESULTADO DA INVESTIGAÇÃO</p><h2 id="answer-title">Sua resposta</h2></div><button id="clear-button" class="text-button" type="button">Nova pergunta ↺</button></div>
+        <div class="answer-card">
+          <div id="answer-body" class="answer-body"></div>
+          <div class="answer-footer"><span><span class="tiny-dot"></span> Base de conhecimento literário</span><button id="copy-button" class="copy-button" type="button"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="7" y="7" width="9" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 7V4.5A1.5 1.5 0 0 0 10.5 3h-6A1.5 1.5 0 0 0 3 4.5v8A1.5 1.5 0 0 0 4.5 14H7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg> Copiar resposta</button></div>
+        </div>
+        <p class="source-disclaimer">As respostas são construídas a partir das anotações deste projeto. Para trabalhos escolares, confira os detalhes na edição do livro que você está usando.</p>
+      </section>
+
+      <section class="explore-section">
+        <div class="explore-heading"><div><p class="section-kicker">EXPLORE POR ASSUNTO</p><h2>Abra outra porta.</h2></div><span class="explore-caption">Escolha um caminho para sua leitura.</span></div>
+        <div class="topic-grid">
+          <button class="topic-card" data-question="Quais são as características e a personalidade de Shmuel?"><span class="topic-number">01 / PERSONAGEM</span><span class="topic-symbol symbol-book">◫</span><strong>Quem são eles?</strong><span>Personalidades, atitudes e mudanças.</span><span class="topic-arrow">↗</span></button>
+          <button class="topic-card" data-question="Quais são as relações e os conflitos entre os personagens?"><span class="topic-number">02 / RELAÇÕES</span><span class="topic-symbol symbol-links">∞</span><strong>O que os conecta?</strong><span>Amizades, família e conflitos.</span><span class="topic-arrow">↗</span></button>
+          <button class="topic-card" data-question="Quais são os principais temas e mensagens do livro?"><span class="topic-number">03 / INTERPRETAÇÃO</span><span class="topic-symbol symbol-star">✳</span><strong>O que a história revela?</strong><span>Temas, escolhas e significado.</span><span class="topic-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="about-strip">
+        <div class="about-icon">i</div><div><strong>Uma ferramenta de leitura, não um substituto do livro.</strong><p>A Biblioteca ajuda a organizar ideias e encontrar conexões. A base atual é focada em <i>O Menino do Pijama Listrado</i> e pode não responder a tudo.</p></div>
+      </section>
+    </main>
+    <footer><a class="footer-brand" href="/">BIBLIOTECA <span>INTELIGENTE</span></a><span>Feita para curiosos. Pensada para compartilhar.</span><a href="#hero-title" class="back-top">Voltar ao topo ↑</a></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</body>
+</html>
